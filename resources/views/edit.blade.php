@@ -1,6 +1,6 @@
-@extends('layout.main')
+@extends('layout.app')
 
-@section('container')
+@section('content')
      <div class="container" style="margin-top: 80px; margin-bottom: 80px;">
         <div class="row">
              <div class="col-md-12">
