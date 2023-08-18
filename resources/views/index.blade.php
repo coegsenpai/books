@@ -6,20 +6,20 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        Data Buku
-                        <a href={{'tambah'}} class="btn btn-sm btn-success" style="marginbottom: 10px; float: right;">Tambah Data</a>
+                        Book Data
+                        <a href={{'tambah'}} class="btn btn-sm btn-success" style="marginbottom: 10px; float: right;">Add New</a>
                     </div>
                     <div class="card-body">
                         <table class="table table-bordered text-center" id="myTable">
                             <thead>
                                 <tr>
                                     <th scope="col">No</th>
-                                    <th class="col-3" scope="col">JUDUL</th>
-                                    <th class="col-2" scope="col">PENULIS</th>
+                                    <th class="col-3" scope="col">Title</th>
+                                    <th class="col-2" scope="col">Author</th>
                                     <th class="col-2" scope="col">ISBN</th>
-                                    <th class="col-2" scope="col">KATEGORI</th>
-                                    <th class="col-1" scope="col">HARGA</th>
-                                    <th class="col-2" scope="col">AKSI</th>
+                                    <th class="col-2" scope="col">Category</th>
+                                    <th class="col-1" scope="col">Price</th>
+                                    <th class="col-2" scope="col">Action</th>
                                 </tr>
                             </thead>
                             @foreach($book as $b) 
@@ -37,7 +37,7 @@
                                             <form action="/{{$b->id}}" method="POST">
                                                 @csrf
                                                 @method('delete')
-                                                <button type="submit" class="btn btn-danger">Hapus</button>   
+                                                <button type="submit" class="btn btn-danger">Delete</button>   
                                             </form>
                                         </div>
                                     </td>

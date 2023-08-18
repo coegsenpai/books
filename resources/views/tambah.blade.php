@@ -6,30 +6,30 @@
              <div class="col-md-12">
                   <div class="card">
                        <div class="card-header">
-                           Tambah Buku
+                           Add Book
                         </div>
                         <div class="card-body">
                         <form action="store" method="POST">
                             @csrf
                             <div class="mb-3">
-                                <label for="judul" class="form-label">Judul</label>
-                                <input type="text" class="form-control" id="judul" name="judul" placeholder="isikan Judul Buku" required>
+                                <label for="judul" class="form-label">Title</label>
+                                <input type="text" class="form-control" id="judul" name="judul" placeholder="Insert Book title" required>
                             </div>
                             <div class="mb-3">
-                                <label for="penulis" class="form-label">Penulis</label>
-                                <input type="text" class="form-control" id="penulis" name="penulis" placeholder="isikan Nama Penulis" required>
+                                <label for="penulis" class="form-label">Author</label>
+                                <input type="text" class="form-control" id="penulis" name="penulis" placeholder="Insert Book Author" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="isbn" class="form-label">ISBN</label>
-                                    <input type="text" class="form-control" id="isbn" name="isbn" placeholder="isikan ISBN Buku" required>
+                                    <input type="text" class="form-control" id="isbn" name="isbn" placeholder="Insert ISBN of book" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="kategori" class="form-label">Kategori</label>
-                                    <input type="text" class="form-control" id="kategori" name="kategori" placeholder="isikan Kategori Buku" required>
+                                    <label for="kategori" class="form-label">Category</label>
+                                    <input type="text" class="form-control" id="kategori" name="kategori" placeholder="Insert Book price" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="harga" class="form-label">Harga</label>
-                                    <input type="number" class="form-control" id="harga" name="harga" placeholder="isikan Harga Buku" required>
+                                    <label for="harga" class="form-label">Price</label>
+                                    <input type="number" class="form-control" id="harga" name="harga" placeholder="Insert Book Price" required>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
